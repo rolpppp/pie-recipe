@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    color: #A4A400;
+}
+
+ul{
+    list-style:none;
+}
+
+.nav-links ul{
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: #A4A400;
+}
+
+.nav-links a:hover{
+    color: black;
+}
+
+.nav-links a.active{
+    color: black;
+    text-decoration: underline;
+}
+
+.about-website, .reason-to-love{
+    padding: 5rem 5rem 5rem 5rem;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.reason-to-love ul{
+    padding: 0;
+}
+
+.hero{
+    display:flex;
+    background-color: #222222;
+    justify-content: space-between;
+    padding: 5rem 5rem 5rem 5rem;
+    color: white;
+    line-height: 2.8rem;
+}
+
+.hero-video{
+    height: auto;
+    width: 700px
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 8rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    border: white solid 1px;
+    color: white;
+    font-size: 11pt;
+}
+
+#best-seller{
+    background-color: #FA8112;
+}
+
+#browse-recipe{
+    background-color: #222222;
+}
+
+.reason-to-love{
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #BFC9D1
+}
+
+.reason-container{
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    width: 80rem;
+}
+
+.reason{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 25rem;
+    background-color: blue;
+    border-radius: 2.5rem;
+    color: white;
+    font-weight: 500;
+    background-color: #25343F;
+}
+
+.reason-img{
+    height: 250px;
+    width: 300px;
+    margin:1.5rem 0 0;
+    border-radius: 2.5rem;
+}
+
+#recipes{
+    text-align: center;
+    line-height: 2.8rem;
+    padding: 5rem 0 5rem 0;
+}
+.sliding-container{
+        box-sizing: border-box;
+        padding: 1.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+}
+
+.sliding-content{
+    display: inline-flex;
+    align-items: center;
+    /* this is ensure the content doesn't wrap and keeps its intrinsic width */
+    white-space: nowrap;
+    /* no CSS gap here — use a fixed margin on items for consistent spacing */
+    animation: autoscroll 20s linear infinite;
+    will-change: transform;
+}
+
+.sliding-container:hover .sliding-content{
+    animation-play-state: paused;
+}
+
+.sliding-item{
+    display: inline-flex;
+    flex: 0 0 300px; /* fixed width for each item */
+    flex-direction: column;
+    height: 300px;
+    margin-right: 20px; /* consistent spacing between items */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliding-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+/* this is the auto-scrolling animation. this moves the first copy of content
+     left by half its total length; a duplicate copy in the DOM creates a seamless loop. */
+@keyframes autoscroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+footer{
+    padding: 2rem 5rem 2rem 5rem;
+    text-align: center;
+}
+
+.link-list{
+    display:flex;
+    flex-direction: column;
+}

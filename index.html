@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/pie_icon.gif">
+    <link href="style.css" rel="stylesheet">
+    <title>Granny's Pies | Home</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img src="assets/images/pie_icon.gif" height="18" alt="Granny's Pies icon">
+            <span class="brand-name">Granny's Pies</span>
+            </a>
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pie.html">Grandma's Lemon Meringue Recipe</a></li>
+                <li><a href="#recipes">All Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="text-container">
+                <h1>Welcome to Granny's Pies</h1>
+                <p>Where delicious pies are made with grandma's love.</p>
+                <div class="buttons">
+                    <a id="best-seller" class="button" href="pie.html">View Best Seller</a>
+                    <a id="browse-recipe" class="button" href="#recipes">Browse recipes</a>
+                </div>
+            </div>
+            <div class="video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="assets/video/grandma_pie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="about-website">
+            <h2>About This Website</h2>
+            <p>This website is dedicated to sharing delicious, traditional pie recipes passed down through generations</p>
+        </section>
+
+        <section class="reason-to-love">
+            <h2>Why You'll Love Our Pies</h2>
+            <div class="reason-container">
+                <div class="reason">
+                    <img class="reason-img" src="assets/images/pie-recipe-img.jpeg" alt="Pumpkin Pie">
+                    <p>Easy-to-follow recipes</p>
+                </div>
+                <div class="reason">
+                    <img class="reason-img" src="assets/images/homemade-pie.jpg" alt="Homemade Chicken Pot Pie">
+                    <p>Classic homemade taste</p>
+                </div>
+                <div class="reason">
+                    <img class="reason-img" src="assets/images/pie-recipes.jpg" alt="Apple Pie Recipe">
+                    <p>Fresh ingredients</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes">
+            <h2>Latest Recipes</h2>
+            <div class="sliding-container">
+                <div class="sliding-content">
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_1.png" width="300" height="300" alt="Pie 1">
+                        <p>Cottage Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_2.png" width="300" height="300" alt="Pie 2">
+                        <p>Strawberry Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_3.png" width="300" height="300" alt="Pie 3">
+                        <p>Pumpkin Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_4.png" width="300" height="300" alt="Pie 4">
+                        <p>Pecan Pie</p>
+                    </div>
+                </div>
+                <!-- duplicate the sliding content to create a seamless loop -->
+                <div class="sliding-content" aria-hidden="true">
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_1.png" width="300" height="300" alt="Pie 1">
+                        <p>Cottage Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_2.png" width="300" height="300" alt="Pie 2">
+                        <p>Strawberry Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_3.png" width="300" height="300" alt="Pie 3">
+                        <p>Pumpkin Pie</p>
+                    </div>
+                    <div class="sliding-item">
+                        <img src="assets/images/pie_4.png" width="300" height="300" alt="Pie 4">
+                        <p>Pecan Pie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <pre>Copyright &#169; 2026 Granny's Pies. A Granny's Pies Production. All rights reserved.</pre>
+        <p style="margin:1rem">
+            <a href="https://validator.w3.org/" target="_blank">
+                <img src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
